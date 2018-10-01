@@ -1,0 +1,60 @@
+﻿**********************************************
+	     < git과 github 시작 >
+	github에서 내려받아 저장하기
+**********************************************
+
+1. git downlods
+https://git-scm.com/downloads
+
+//초기설정 
+- 바탕화면 우클릭 Git Bash Here
+- 사용자 정보 입력
+	명령어 
+	 $git config --global user.name "사용자 이름"     //enter
+	 $git config --global user.email "본인메일 @gmail.com" //enter
+	 $git config --list // 마지막 두줄에서 입력한 정보를 확인할 수 있다.
+
+2. github sign up
+https://github.com/
+
+//싸이트 가입 후 github에 저장소 만들기
+- (왼쪽 하단에 녹색) New repository 클릭
+- Repository name // 저장소 이름 나중에 복제해서 내 컴퓨터에 들어올 파일이름 (명시적인게 좋은듯)
+- Description // 저장소 설명
+- Public check ! // Private는 나만 볼수 있음 그러나 유료
+- 아래 check box check ! 
+- Create repositrory click! //끝 
+
+3. git과 github 연결하기
+
+//로컬컴퓨터와 원격저장소 연결하기
+- 싸이트에 만들어진 저장소에서 Clone or Download click!
+- 주소 복사
+- 바탕화면 우클릭 Git Bash Here
+- github에 있는 저장소 복사
+	명령어
+	 $git clone 복사한 주소 붙이기 //마우스 우클릭으로 붙이기 
+	 (github와 똑같은 이름의 폴더가 생성됨 확인)
+ 	 $cd 폴더명/  //enter 치면 시작 주소가 폴더명으로 바뀜 마지막(master)<는 blanch 이름임
+	 $ls  // 폴더에 보이는 파일 확인 가능
+	 $ls -al // 폴더안에 숨겨진 파일까지 확인 가능
+	 
+4. pull > 작업 > add > commit > push
+
+- git pull
+ github에서 컴퓨터로 가져오기
+
+- 작업 
+- git add * 
+ 버전관리할 파일 지정하기, *는 모든 파일을 뜻함
+- git commit -m "커밋 내용"
+ 수정한 내용을 커밋하여 버전으로 적용하기
+- git push 
+ 컴퓨터의 내용을 github로 보내기
+
+	추가 명령어
+	$git status
+	 현재 이력 확인
+	$mkdir 폴더명  // 폴더 생성
+
+
